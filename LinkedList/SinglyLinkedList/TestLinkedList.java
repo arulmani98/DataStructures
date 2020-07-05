@@ -19,7 +19,13 @@ public class TestLinkedList {
         list.display();
         System.out.println("get the 2nd element "+list.get(2));
         System.out.println("IsEmpty = "+list.isEmpty());
-        System.out.println("Contains 10 ? "+list.contains(10));
+        try {
+            System.out.println("Contains 10 ? " + list.contains(10));
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
         System.out.println("contains 2 ?"+list.contains(2));
         System.out.println(list.contains(6));
         list.display();

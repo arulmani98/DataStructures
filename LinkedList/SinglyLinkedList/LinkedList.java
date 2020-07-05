@@ -99,25 +99,25 @@ class LinkedList implements List{
             return false;
         }
         else {
-            if (node.data == var1) {
-                Node currentNode = head;
-                Node nextNode = currentNode.next;
-                head = nextNode;
-                currentNode.next = null;
-                return true;
-            } else {
-                Node previousNode = null;
-                while (node.data != var1) {
-                    previousNode = node;
-                    node = node.next;
-                }
-                if (node.next == null) {
-                    previousNode.next = null;
+                if (node.data == var1) {
+                    Node currentNode = head;
+                    Node nextNode = currentNode.next;
+                    head = nextNode;
+                    currentNode.next = null;
+                    return true;
+                } else {
+                    Node previousNode = null;
+                    while (node.data != var1) {
+                        previousNode = node;
+                        node = node.next;
+                    }
+                    if (node.next == null) {
+                        previousNode.next = null;
+                        return true;
+                    }
+                    previousNode.next = node.next;
                     return true;
                 }
-                previousNode.next = node.next;
-                return true;
-            }
         }
     }
 
