@@ -2,18 +2,13 @@ public class StackOperations implements StackInterface {
     private int top = -1;
     private int size;
     Object[] stack;
-    public StackOperations(int size){
+    public StackOperations(int size) {
         this.size = size;
         stack = new Object[size];
     }
 
-
     public int getSize() {
         return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
     }
 
     @Override

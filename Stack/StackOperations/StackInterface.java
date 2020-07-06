@@ -17,12 +17,12 @@ public interface StackInterface<E> {
          * push (add) the element into the stack.
          * @param var1 the element want to pushed into the stack.
          * @return true if the element was pushed into the stack.
-         * @return true if the element was not pushed into the stack.
+         * @return false if the element was not pushed into the stack.
          */
         boolean push(E var1);
 
         /**
-         * pop the top element from the stack.
+         * Pop the top element from the stack.
          * @return returns the popped element from the stack.
          */
         E pop();
