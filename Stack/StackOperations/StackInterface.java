@@ -34,6 +34,12 @@ public interface StackInterface<E> {
         E top();
 
         /**
+         * Returns the top value of the stack
+         * @return Return the top value as integer of the stack.
+         */
+        int topValue();
+
+        /**
          * Display or prints the elements in the stack.
          */
         void display();

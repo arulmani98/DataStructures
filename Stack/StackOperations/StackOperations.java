@@ -70,6 +70,11 @@ public class StackOperations implements StackInterface {
     }
 
     @Override
+    public int topValue() {
+        return top;
+    }
+
+    @Override
     public void display() {
         if(!isEmpty())
         {
@@ -77,6 +82,7 @@ public class StackOperations implements StackInterface {
             for(i=top;i>=0;i--){
                 System.out.print(stack[i]+" ");
             }
+            System.out.println("");
         }
         else{
             System.out.println("Stack is Empty");
