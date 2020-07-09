@@ -9,14 +9,15 @@ class LinkedList implements List{
     public boolean isEmpty() {
         if(head == null)
             return true;
-        return false;
+        else
+            return false;
     }
 
-    public boolean add(Object var1) {
+    public boolean addAtLast(Object var1) {
         Node node = new Node();
         node.data = var1;
         node.next = null;
-        if(head == null){
+        if(isEmpty()){
             head = node;
             return true;
         }
@@ -31,6 +32,27 @@ class LinkedList implements List{
         }
     }
 
+    @Override
+    public boolean addAtFront(Object var1) {
+        Node node = new Node();
+        node.data = var1;
+        node.next = null;
+        if(head==null){
+            node.next = null;
+            head = node;
+            return true;
+        }
+        else{
+            node.next = head;
+            head = node;
+            return true;
+        }
+    }
+
+    public Object headValue(){
+        return head.data;
+    }
+
     public boolean clear() {
         head = null;
         return true;
@@ -42,12 +64,12 @@ class LinkedList implements List{
             return 0;
         }
         else{
-            Node node = head;
-            while(node.next!=null){
+            Node n = head;
+            while(n.next!=null){
                 count++;
-                node = node.next;
+                n = n.next;
             }
-            return count;
+            return count++;
         }
     }
 

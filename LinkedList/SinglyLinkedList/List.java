@@ -24,9 +24,18 @@ public interface List<E> {
     /**
      * Appends the specified element to the end of this list (optional operation).
      * @param var1 element
-     * @return true
+     * @return true if add was done successfully
+     * @return false if element was not added.
      */
-    boolean add(E var1);
+    boolean addAtLast(E var1);
+
+    /**
+     *Appends the specified element to front of the list.
+     * @param var1 element
+     * @return true if add was done successfully
+     * @return false if element was not added.
+     */
+    boolean addAtFront(E var1);
 
     /**
      * Removes the first occurrence of the specified element from this list,
