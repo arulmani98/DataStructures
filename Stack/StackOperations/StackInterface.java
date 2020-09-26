@@ -1,13 +1,13 @@
 public interface StackInterface<E> {
         /**
-         * Returns true if this stack contains no elements.
+         * checks if this stack contains no elements.
          * @return true if stack contains no elements.
          * @return false if stack is not empty.
          */
         boolean isEmpty();
 
         /**
-         * Returns true if this stack was full and top reached the maximum value
+         * checks if this stack was full and top reached the maximum value
          * @return true if stack is full.
          * @return false if stack is not full
          */
@@ -28,19 +28,19 @@ public interface StackInterface<E> {
         E pop();
 
         /**
-         * Returns the Top element in the stack
+         * Gives the Top element in the stack
          * @return Returns top element in the stack.
          */
         E top();
 
         /**
-         * Returns the top value of the stack
+         * Gives the top value of the stack
          * @return Return the top value as integer of the stack.
          */
         int topValue();
 
         /**
-         * Display or prints the elements in the stack.
+         * Display or prints all the elements in the stack.
          */
         void display();
 }
